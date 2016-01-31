@@ -1,0 +1,37 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-light">
+    <h1 class="title">Adicionar Cartão</h1>
+  </ion-header-bar>
+  <ion-content>
+    <form>
+      <div class="list">
+
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Número do Cartão de Crédito</span>
+          <input type="text" placeholder="Número do Cartão de Crédito"
+                 ng-model="card.number"
+                 ui-mask="9999 9999 9999 9999">
+        </label>
+
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Mês</span>
+          <input type="text" placeholder="Mês" ng-model="card.mounth">
+        </label>
+
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Ano</span>
+          <input type="text" placeholder="Ano" ng-model="card.year">
+        </label>
+
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Código de Segurança</span>
+          <input type="text" placeholder="Código de Segurança" ng-model="card.cvv">
+        </label>
+
+        <label class="item">
+          <button class="button button-block button-calm" type="button" ng-click="cardCtrl.add(card)">Salvar</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

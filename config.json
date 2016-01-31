@@ -1,0 +1,6 @@
+{
+  "name": "starter.constants",
+  "constants": {
+    "API_HOST": "http://localhost:8080"
+  }
+}

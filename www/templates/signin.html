@@ -1,0 +1,13 @@
+<ion-view title="Entrar" hide-nav-bar="true" cache-view="false" can-swipe-back="false">
+  <ion-content padding="true" scroll="false" class="signin">
+    <h1>Entrar</h1>
+    <form name="formSignin" class="list">
+      <ion-list>
+        <input type="email" class="item item-input" placeholder="Email" ng-model="user.username">
+        <input type="password" class="item item-input" placeholder="Senha" ng-model="user.password">
+        <button class="button button-dark button-block" ng-click="signinCtrl.login(user)">Entrar</button>
+        <a class="button button-light" ui-sref="app.launch">Voltar</a>
+      </ion-list>
+    </form>
+  </ion-content>
+</ion-view>

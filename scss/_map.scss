@@ -1,0 +1,111 @@
+#map_canvas {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+
+  .center-marker {
+    position:absolute;
+    background:url('../img/map-marker-icon.png') no-repeat;
+    top:50%;
+    left:50%;
+    z-index:1;
+    margin-left:-30px;
+    margin-top:-60px;
+    height:60px;
+    width:60px;
+    cursor:pointer;
+  }
+
+  .map-tooltip {
+    background-color: white;
+    position:absolute;
+    z-index:1;
+    height:60px;
+    width:80%;
+    min-width: 300px;
+    max-width: 350px;
+    top: 45%;
+    left: 50%;
+    cursor:pointer;
+    box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.75);
+    transform: translate(-50%, -100%);
+
+    .service-type {
+      float: left;
+      background-color: $calm;
+      color: white;
+      font-size: 30px;
+      width: 18%;
+      height: 100%;
+      padding-top: 15px;
+      text-align: center;
+    }
+
+    .content {
+      float: left;
+      padding: 8px 5px 5px 8px;
+      width: 64%;
+      height: 100%;
+      background-color: white;
+      z-index:1;
+
+      h1 {
+        font-size: 15px;
+        margin-bottom: -5px;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+
+    .icon {
+      float:left;
+      height: 100%;
+      width: 18%;
+      padding-right: 10px;
+      text-align: right;
+      padding-top: 20px;
+    }
+
+    &:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-top-color: #ffffff;
+      border-width: 10px;
+      margin-left: -10px;
+
+      transform-origin: 0 0;
+      transform: rotate(-45deg);
+      box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.75);
+
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: "";
+      position: absolute;
+      pointer-events: none;
+
+      border-color: rgba(255, 255, 255, 0);
+      border-top-color: #ffffff;
+      border-width: 13px;
+      margin-left: -13px;
+
+      background-color: white;
+    }
+
+  }
+
+}
+
+.scroll {
+  height: 100%;
+}
+
+.angular-google-map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}

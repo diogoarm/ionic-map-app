@@ -1,0 +1,36 @@
+.signup {
+  text-align: center;
+  background-color: $calm;
+
+  h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  form {
+
+    input {
+      color: #666666 !important;
+      border: none !important;
+      margin-bottom: 15px;
+      background-color: white;
+      padding: 0 12px 0 12px;
+      @include border-left-radius(2px !important);
+      @include border-right-radius(2px !important);
+    }
+
+    small {
+      color: white;
+      font-size: 10px;
+
+      a {
+        text-decoration: underline;
+        color: white;
+        font-weight: bolder;
+      }
+    }
+
+  }
+}
+

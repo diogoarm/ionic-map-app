@@ -1,0 +1,21 @@
+{
+  "name": "HelloIonic",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.1.0"
+  },
+  "dependencies": {
+    "ionic-material": "~0.4.2",
+    "robotodraft": "~1.1.0",
+    "angular-google-maps": "~2.2.1",
+    "ngCordova": "~0.1.20-alpha",
+    "angular-messages": "~1.4.7",
+    "angular-bootstrap": "~0.14.3"
+  },
+  "resolutions": {
+    "angular": "1.4.7",
+    "ionic": "1.1.0",
+    "angular-animate": "1.4.3",
+    "angular-sanitize": "1.4.3"
+  }
+}

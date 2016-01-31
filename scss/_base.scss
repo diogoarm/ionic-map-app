@@ -1,0 +1,37 @@
+body {
+  background-color: $calm;
+}
+
+.view-container {
+  background-color: $calm;
+}
+
+.content-bg {
+  background-color: $calm;
+}
+
+form {
+  button.button-block {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+
+  .message {
+    text-align: left;
+    margin-top: -18px;
+    margin-bottom: 10px;
+    padding-left: 2px;
+  }
+
+  a.button {
+    width: 100%;
+  }
+}
+
+.has-header {
+  top: 65px;
+}
+
+.card img {
+  box-shadow: none;
+}

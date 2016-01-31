@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>diogoarm</title>
+
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic-material/dist/ionic.material.js"></script>
+    <script src="lib/lodash/lodash.js"></script>
+    <script src="lib/angular-simple-logger/dist/angular-simple-logger.js"></script>
+    <script src="lib/angular-google-maps/dist/angular-google-maps.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="lib/angular-messages/angular-messages.js"></script>
+    <script src="lib/angular-bootstrap/ui-bootstrap.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+    <!-- Controller -->
+    <script src="js/controllers/appCtrl.js"></script>
+    <script src="js/controllers/launchCtrl.js"></script>
+    <script src="js/controllers/geoCtrl.js"></script>
+    <script src="js/controllers/signupCtrl.js"></script>
+    <script src="js/controllers/signinCtrl.js"></script>
+    <script src="js/controllers/cardCtrl.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/signinService.js"></script>
+    <script src="js/services/signupService.js"></script>
+    <script src="js/services/tokenService.js"></script>
+    <script src="js/services/cardService.js"></script>
+
+    <!-- Directives -->
+
+
+    <!-- Constants - generated from config[-prod].json -->
+    <script src="js/config.js"></script>
+  </head>
+
+  <body ng-app="starter">
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

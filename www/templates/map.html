@@ -1,0 +1,29 @@
+<ion-view view-title="Mapa">
+  <ion-content class="has-header" scroll="false">
+    <div id="map_canvas">
+
+      <div class="map-tooltip">
+        <div class="service-type">
+          <i class="ion-android-car"></i>
+        </div>
+        <div class="content">
+          <h1>Estou aqui</h1>
+          <p>Recuperando endereço...</p>
+        </div>
+        <div class="icon" ng-click="showModal()">
+          <i class="ion-chevron-right"></i>
+        </div>
+      </div>
+
+      <ui-gmap-google-map center='geo.map.center' zoom='geo.map.zoom' options='geo.map.options'>
+        <ui-gmap-marker coords='geo.map.marker.coords' options='geo.map.marker.options' idKey='geo.map.marker.id'>
+        </ui-gmap-marker>
+      </ui-gmap-google-map>
+    </div>
+
+    <button id="fab" class="button button-calm button-fab button-fab-bottom-right" ng-click="geo.getCurrentPosition()">
+      <i class="icon ion-android-locate"></i>
+    </button>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,18 @@
+<ion-view view-title="Pagamentos">
+  <ion-content class="stable-bg">
+    <div class="list card payment" ng-repeat="card in cardCtrl.data">
+
+      <div class="item item-image">
+        <img src="img/MasterCard300.png">
+      </div>
+
+      <div class="item item-text-wrap">
+        <h1>{{ card.number }}</h1>
+      </div>
+    </div>
+  </ion-content>
+
+  <button id="fab" class="button button-calm button-fab button-fab-bottom-right" ng-click="cardCtrl.showModal()">
+    <i class="icon ion-android-add"></i>
+  </button>
+</ion-view>

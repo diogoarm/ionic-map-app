@@ -1,0 +1,47 @@
+<ion-view title="Crie sua conta" hide-nav-bar="true">
+  <ion-content padding="true" scroll="false" class="signup">
+    <h1>Crie sua <b>conta</b></h1>
+    <form name="formSignup" class="list">
+
+      <ion-list>
+          <input type="text" name="firstname" class="item item-input" placeholder="Seu Nome"
+                 ng-model="user.firstname" ng-required="true" ng-minlength="2" ng-maxlength="100" >
+
+          <div ng-messages="formSignup.firstname.$error"
+               ng-if="formSignup.firstname.$touched"
+               ng-class="{message: formSignup.firstname.$invalid}">
+            <div ng-messages-include="templates/messages.html"></div>
+            <small ng-message="minlength">Preencha com no mínimo 2 caracteres</small>
+            <small ng-message="maxlength">Preencha com no máximo 100 caracteres</small>
+          </div>
+
+          <input type="email" name="email" class="item item-input" placeholder="Email"
+                 ng-model="user.username" ng-required="true">
+
+          <div ng-messages="formSignup.email.$error"
+               ng-if="formSignup.email.$touched"
+               ng-class="{message: formSignup.email.$invalid}">
+            <div ng-messages-include="templates/messages.html"></div>
+          </div>
+
+          <input type="password" name="password" class="item item-input" placeholder="Senha"
+                 ng-model="user.password" ng-required="true" ng-minlength="6" ng-maxlength="12">
+
+          <div ng-messages="formSignup.password.$error"
+               ng-if="formSignup.password.$touched"
+               ng-class="{message: formSignup.password.$invalid}">
+            <div ng-messages-include="templates/messages.html"></div>
+            <small ng-message="minlength">Preencha com no mínimo 6 caracteres</small>
+            <small ng-message="maxlength">Preencha com no máximo 12 caracteres</small>
+          </div>
+          </div>
+
+          <button class="button button-dark button-block"
+                  ng-click="signupCtrl.register(user)"
+                  ng-disabled="!formSignup.$valid">Criar minha conta</button>
+          <a ui-sref="app.launch" class="button button-light">Voltar</a>
+          <small>Ao criar a conta você concorda com todos os <a ui-sref="app.home">Termos de Serviço.</a></small>
+      </ion-list>
+    </form>
+  </ion-content>
+</ion-view>
