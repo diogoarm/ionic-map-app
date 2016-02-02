@@ -4,7 +4,8 @@
 node_modules/
 lib/
 platforms/
-plugins/
+# plugins/
 .idea
 css/
 www/js/config.js
+npm-debug.log
